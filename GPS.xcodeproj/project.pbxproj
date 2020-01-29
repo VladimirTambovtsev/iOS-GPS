@@ -7,23 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6469BFCDCA92E183A83672A0 /* Pods_GPS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A780F918544CBA774B44735 /* Pods_GPS.framework */; };
 		E7E76CF723E1C699002A61D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E76CF623E1C699002A61D9 /* AppDelegate.swift */; };
 		E7E76CF923E1C699002A61D9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E76CF823E1C699002A61D9 /* SceneDelegate.swift */; };
-		E7E76CFB23E1C699002A61D9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E76CFA23E1C699002A61D9 /* ViewController.swift */; };
+		E7E76CFB23E1C699002A61D9 /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E76CFA23E1C699002A61D9 /* MapVC.swift */; };
 		E7E76CFE23E1C699002A61D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7E76CFC23E1C699002A61D9 /* Main.storyboard */; };
 		E7E76D0023E1C69C002A61D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7E76CFF23E1C69C002A61D9 /* Assets.xcassets */; };
 		E7E76D0323E1C69C002A61D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7E76D0123E1C69C002A61D9 /* LaunchScreen.storyboard */; };
+		E7E76D1023E1DD05002A61D9 /* DroppablePin.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E76D0F23E1DD05002A61D9 /* DroppablePin.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6A780F918544CBA774B44735 /* Pods_GPS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GPS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4E345ECAF754A2DB0EACA89 /* Pods-GPS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GPS.release.xcconfig"; path = "Pods/Target Support Files/Pods-GPS/Pods-GPS.release.xcconfig"; sourceTree = "<group>"; };
 		E7E76CF323E1C699002A61D9 /* GPS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GPS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7E76CF623E1C699002A61D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E7E76CF823E1C699002A61D9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E7E76CFA23E1C699002A61D9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E7E76CFA23E1C699002A61D9 /* MapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapVC.swift; sourceTree = "<group>"; };
 		E7E76CFD23E1C699002A61D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E7E76CFF23E1C69C002A61D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E7E76D0223E1C69C002A61D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E7E76D0423E1C69C002A61D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E7E76D0F23E1DD05002A61D9 /* DroppablePin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DroppablePin.swift; sourceTree = "<group>"; };
+		F7F821E29D94EF62B6D94FBB /* Pods-GPS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GPS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GPS/Pods-GPS.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6469BFCDCA92E183A83672A0 /* Pods_GPS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5C8586D90CAEAE83AE93A3B7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6A780F918544CBA774B44735 /* Pods_GPS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9EFFB8D17EF2D0EC806D183D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F7F821E29D94EF62B6D94FBB /* Pods-GPS.debug.xcconfig */,
+				A4E345ECAF754A2DB0EACA89 /* Pods-GPS.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		E7E76CEA23E1C699002A61D9 = {
 			isa = PBXGroup;
 			children = (
 				E7E76CF523E1C699002A61D9 /* GPS */,
 				E7E76CF423E1C699002A61D9 /* Products */,
+				9EFFB8D17EF2D0EC806D183D /* Pods */,
+				5C8586D90CAEAE83AE93A3B7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +82,56 @@
 		E7E76CF523E1C699002A61D9 /* GPS */ = {
 			isa = PBXGroup;
 			children = (
+				E7E76D0E23E1C6F7002A61D9 /* Extensions */,
+				E7E76D0D23E1C6F1002A61D9 /* Utilities */,
+				E7E76D0C23E1C6E6002A61D9 /* Models */,
+				E7E76D0B23E1C6E0002A61D9 /* Views */,
+				E7E76D0A23E1C6D5002A61D9 /* Controllers */,
 				E7E76CF623E1C699002A61D9 /* AppDelegate.swift */,
 				E7E76CF823E1C699002A61D9 /* SceneDelegate.swift */,
-				E7E76CFA23E1C699002A61D9 /* ViewController.swift */,
 				E7E76CFC23E1C699002A61D9 /* Main.storyboard */,
 				E7E76CFF23E1C69C002A61D9 /* Assets.xcassets */,
 				E7E76D0123E1C69C002A61D9 /* LaunchScreen.storyboard */,
 				E7E76D0423E1C69C002A61D9 /* Info.plist */,
 			);
 			path = GPS;
+			sourceTree = "<group>";
+		};
+		E7E76D0A23E1C6D5002A61D9 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E7E76CFA23E1C699002A61D9 /* MapVC.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		E7E76D0B23E1C6E0002A61D9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E7E76D0F23E1DD05002A61D9 /* DroppablePin.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E7E76D0C23E1C6E6002A61D9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E7E76D0D23E1C6F1002A61D9 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		E7E76D0E23E1C6F7002A61D9 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +141,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E7E76D0723E1C69C002A61D9 /* Build configuration list for PBXNativeTarget "GPS" */;
 			buildPhases = (
+				B71200434201F3B61407A1E7 /* [CP] Check Pods Manifest.lock */,
 				E7E76CEF23E1C699002A61D9 /* Sources */,
 				E7E76CF023E1C699002A61D9 /* Frameworks */,
 				E7E76CF123E1C699002A61D9 /* Resources */,
+				911DD0BA66055F7FC18BDA44 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,12 +202,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		911DD0BA66055F7FC18BDA44 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-GPS/Pods-GPS-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GPS/Pods-GPS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B71200434201F3B61407A1E7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GPS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E7E76CEF23E1C699002A61D9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E7E76CFB23E1C699002A61D9 /* ViewController.swift in Sources */,
+				E7E76CFB23E1C699002A61D9 /* MapVC.swift in Sources */,
+				E7E76D1023E1DD05002A61D9 /* DroppablePin.swift in Sources */,
 				E7E76CF723E1C699002A61D9 /* AppDelegate.swift in Sources */,
 				E7E76CF923E1C699002A61D9 /* SceneDelegate.swift in Sources */,
 			);
@@ -282,6 +393,7 @@
 		};
 		E7E76D0823E1C69C002A61D9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7F821E29D94EF62B6D94FBB /* Pods-GPS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +412,7 @@
 		};
 		E7E76D0923E1C69C002A61D9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A4E345ECAF754A2DB0EACA89 /* Pods-GPS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

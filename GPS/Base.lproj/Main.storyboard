@@ -1,24 +1,89 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--MapVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="MapVC" customModule="GPS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" zoomEnabled="NO" rotateEnabled="NO" pitchEnabled="NO" showsUserLocation="YES" showsCompass="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4xf-fO-aLr">
+                                <rect key="frame" x="0.0" y="20" width="414" height="856"/>
+                            </mapView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kTe-O3-C9J">
+                                <rect key="frame" x="0.0" y="20" width="414" height="64"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Double Tap to drop a Pin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HlP-fo-O3d">
+                                        <rect key="frame" x="110.66666666666669" y="20" width="193" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="24" id="00T-0f-CBc"/>
+                                            <constraint firstAttribute="width" constant="193" id="Vt1-aI-gjI"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="HlP-fo-O3d" firstAttribute="top" secondItem="kTe-O3-C9J" secondAttribute="top" constant="20" id="6Ki-1g-4x0"/>
+                                    <constraint firstItem="HlP-fo-O3d" firstAttribute="centerX" secondItem="kTe-O3-C9J" secondAttribute="centerX" id="YBQ-WZ-CTy"/>
+                                    <constraint firstItem="HlP-fo-O3d" firstAttribute="centerY" secondItem="kTe-O3-C9J" secondAttribute="centerY" id="lP3-Pe-HZP"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8TR-KS-gd8">
+                                <rect key="frame" x="327" y="795" width="67" height="67"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="67" id="7Wq-BH-MwU"/>
+                                    <constraint firstAttribute="height" constant="67" id="gGo-F3-RcI"/>
+                                </constraints>
+                                <state key="normal" image="locationButton"/>
+                                <connections>
+                                    <action selector="onBtnTaped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wSJ-GW-gPO"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kfm-PC-yYc">
+                                <rect key="frame" x="20" y="884" width="394" height="11"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="kfm-PC-yYc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" symbolic="YES" id="1Tc-MM-hNJ"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="kfm-PC-yYc" secondAttribute="bottom" constant="-33" id="2HU-aR-JBF"/>
+                            <constraint firstItem="4xf-fO-aLr" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="EIs-e3-hCc"/>
+                            <constraint firstItem="4xf-fO-aLr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ITo-Sc-Bal"/>
+                            <constraint firstItem="kTe-O3-C9J" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Kkk-Zv-52K"/>
+                            <constraint firstItem="8TR-KS-gd8" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Nld-yN-TpB"/>
+                            <constraint firstItem="kTe-O3-C9J" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="XHZ-nW-26r"/>
+                            <constraint firstAttribute="bottom" secondItem="kfm-PC-yYc" secondAttribute="bottom" constant="20" symbolic="YES" id="Z5L-2a-Bdg"/>
+                            <constraint firstItem="4xf-fO-aLr" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="b8F-y4-stO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8TR-KS-gd8" secondAttribute="trailing" constant="20" id="izF-Qn-I5F"/>
+                            <constraint firstItem="kfm-PC-yYc" firstAttribute="top" secondItem="4xf-fO-aLr" secondAttribute="bottom" constant="8" symbolic="YES" id="j9d-vQ-dXJ"/>
+                            <constraint firstAttribute="trailing" secondItem="kfm-PC-yYc" secondAttribute="trailing" id="nEl-rL-nHa"/>
+                            <constraint firstItem="4xf-fO-aLr" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="20" symbolic="YES" id="sjs-Wc-jJF"/>
+                            <constraint firstItem="kTe-O3-C9J" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="20" symbolic="YES" id="vxH-IL-lIJ"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="mapView" destination="4xf-fO-aLr" id="tzO-0R-Rxt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="138.61607142857142"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="locationButton" width="67" height="67"/>
+    </resources>
 </document>
