@@ -15,6 +15,9 @@
 		E7E76D0023E1C69C002A61D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7E76CFF23E1C69C002A61D9 /* Assets.xcassets */; };
 		E7E76D0323E1C69C002A61D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7E76D0123E1C69C002A61D9 /* LaunchScreen.storyboard */; };
 		E7E76D1023E1DD05002A61D9 /* DroppablePin.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E76D0F23E1DD05002A61D9 /* DroppablePin.swift */; };
+		E7E76D1223E224C4002A61D9 /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E76D1123E224C4002A61D9 /* PhotoCell.swift */; };
+		E7E76D1423E22B0F002A61D9 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E76D1323E22B0F002A61D9 /* Constants.swift */; };
+		E7E76D1623E2F760002A61D9 /* PopVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E76D1523E2F760002A61D9 /* PopVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +32,9 @@
 		E7E76D0223E1C69C002A61D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E7E76D0423E1C69C002A61D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E7E76D0F23E1DD05002A61D9 /* DroppablePin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DroppablePin.swift; sourceTree = "<group>"; };
+		E7E76D1123E224C4002A61D9 /* PhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
+		E7E76D1323E22B0F002A61D9 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		E7E76D1523E2F760002A61D9 /* PopVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopVC.swift; sourceTree = "<group>"; };
 		F7F821E29D94EF62B6D94FBB /* Pods-GPS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GPS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GPS/Pods-GPS.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -101,6 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				E7E76CFA23E1C699002A61D9 /* MapVC.swift */,
+				E7E76D1523E2F760002A61D9 /* PopVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -109,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				E7E76D0F23E1DD05002A61D9 /* DroppablePin.swift */,
+				E7E76D1123E224C4002A61D9 /* PhotoCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -123,6 +131,7 @@
 		E7E76D0D23E1C6F1002A61D9 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				E7E76D1323E22B0F002A61D9 /* Constants.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -249,9 +258,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				E7E76CFB23E1C699002A61D9 /* MapVC.swift in Sources */,
+				E7E76D1223E224C4002A61D9 /* PhotoCell.swift in Sources */,
+				E7E76D1623E2F760002A61D9 /* PopVC.swift in Sources */,
 				E7E76D1023E1DD05002A61D9 /* DroppablePin.swift in Sources */,
 				E7E76CF723E1C699002A61D9 /* AppDelegate.swift in Sources */,
 				E7E76CF923E1C699002A61D9 /* SceneDelegate.swift in Sources */,
+				E7E76D1423E22B0F002A61D9 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
